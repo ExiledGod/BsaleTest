@@ -4,7 +4,7 @@ include ('connect.php');
 function retorno_productos($q){
     $conet = conectar();
     
-    $product = "SELECT * FROM product where name like '%".$q."%'";
+    $product = "SELECT * FROM product as p where name like '%".$q."%' group by p.name ";
     //print_r($product);
     $Qproduct = $conet->query($product);
     $dataProducto = array();

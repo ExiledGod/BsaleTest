@@ -14,7 +14,7 @@ function retorno_productos($q){
     $row = $Qcategory->fetch_array(MYSQLI_ASSOC);
     $id = $row['num'];
     //echo "mi categoria: ".$Qcategory;
-    $product = "SELECT * FROM product where category ='".$id."'";
+    $product = "SELECT * FROM product as p where category ='".$id."' group by p.name";
     //echo "mi producto".$product;
     $Qproduct = $conet->query($product,MYSQLI_USE_RESULT);
     $dataProducto = array();
