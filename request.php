@@ -24,19 +24,24 @@ function retorno_productos($q){
     for ($i=0; $i < sizeof($set) ; $i++) { 
 
       echo "<div class='item'>";
-      if ($set[$i]['url_image'] == "") {
+      if ($set[$i]['url_image'] == "") { //imagen
         echo "<img src='http://www.riobeauty.co.uk/images/product_image_not_found.gif' alt='".$set[$i]['name']."' height='300px' width='300px'>";
       }else {
         echo "<img src='".$set[$i]['url_image']."' alt='".$set[$i]['name']."' height='300px' width='300px'>";
-      }
-      echo "<p class='name'>".$set[$i]['name']."</p>";
-      if ($set[$i]['discount']>0) {
+      } //fin de la imagen
+      echo "<p class='name'>".$set[$i]['name']."</p>"; //nombre
+      echo "<div class='item-price'>";
+      if ($set[$i]['discount']>0) { //precio,descuento y btn-add
+        echo "<div class='item-price-desc'>";
         echo "<p class='precio' value='".$set[$i]['price']."'>Precio: <del>".$set[$i]['price']."</del></p>";
         echo "<p class='descuento'>con desc.".$set[$i]['discount']."% ".$set[$i]['price']*(1-$set[$i]['discount']/100)."</p>";
+        echo "</div>";
+        echo "<a href='#' onclick='pagar()'><i class='fas fa-plus-circle'></i></a>";
       }else {
         echo "<p class='precio'>Precio: ".$set[$i]['price']."</p>";
+        echo "<a href='#' onclick='pagar()'><i class='fas fa-plus-circle'></i></a>";
       }
-      echo "<a href='#' onclick='pagar()'><i class='fas fa-plus-circle'></i></a>";
+      echo "</div>";
       echo "</div>";
     }
     $json = json_encode($dataProducto);
