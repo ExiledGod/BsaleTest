@@ -16,9 +16,9 @@ function retorno_productos($q){
 
         echo "<div class='item'>";
         if ($set[$i]['url_image'] == "") {
-            echo "<img src='http://www.riobeauty.co.uk/images/product_image_not_found.gif' alt='".$set[$i]['name']."'>";
+            echo "<img src='http://www.riobeauty.co.uk/images/product_image_not_found.gif' alt='".$set[$i]['name']."' height='300px'>";
         }else {
-            echo "<img class='item-img' src='".$set[$i]['url_image']."' alt='".utf8_encode($set[$i]['name'])."'>";
+            echo "<img src='".$set[$i]['url_image']."' alt='".utf8_encode($set[$i]['name'])."' height='300px'>";
         }
         echo "<p>".$set[$i]['name']."</p>";
         if ($set[$i]['discount']>0) {

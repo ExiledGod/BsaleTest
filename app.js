@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const buscador = document.querySelector('#buscador');
     const formulario = document.querySelector('.formulario');
     //-------------EventListener----------
-    buscador= addEventListener('input', buscadorProductos);
+    buscador.addEventListener('input', buscadorProductos);
     //link1.addEventListener('click',enVenta)
 //Fin del addEventListener DOMContentLoaded
 });
