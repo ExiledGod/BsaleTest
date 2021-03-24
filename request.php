@@ -34,7 +34,7 @@ function retorno_productos($q){
       if ($set[$i]['discount']>0) { //precio,descuento y btn-add
         echo "<div class='item-price-desc'>";
         echo "<p class='precio' value='".$set[$i]['price']."'>Precio: <del>".$set[$i]['price']."</del></p>";
-        echo "<p class='descuento'>con desc.".$set[$i]['discount']."% ".$set[$i]['price']*(1-$set[$i]['discount']/100)."</p>";
+        echo "<p class='descuento'>con desc. ".$set[$i]['discount']."% ".$set[$i]['price']*(1-$set[$i]['discount']/100)."</p>";
         echo "</div>";
         echo "<a href='#' onclick='pagar()'><i class='fas fa-plus-circle'></i></a>";
       }else {
