@@ -6,6 +6,9 @@ function conectar(){
     $database="bsale_test";          // use your database name
     //------conexion a la base de datos--------
     $server = new mysqli($host, $username, $password, $database);
+    if($server === false){
+        die("ERROR: Could not connect. " . mysqli_connect_error());
+    }
     $server->set_charset("utf8");
     return $server;
 }
