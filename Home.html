@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carmesi Bar</title>
+    <!--/////////Font Awesome/////////-->
+    <script src="https://kit.fontawesome.com/1432a9fa0b.js" crossorigin="anonymous"></script>
+    <!--/////////Styles/////////-->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="./css/Mi.css">
+</head>
+
+<body id="data">
+    <!--/////////Barra de navegacion/////////-->
+    <header id="header">
+        <nav class="navbar">
+            <div class="navbar-center">
+                <span class="nav-icon"><a href="#"><i class="fas fa-bars"></i></a></i></span> <!--icono 3 barras para el menu-->
+                <img src="./images/logo_bsale.svg" alt="store logo" width="100" height="30">
+                <div class="cart-btn"> <!--carro de compras-->
+                    <span class="nav-icon"><i class="fas fa-cart-plus"></i></span><!--icono carro de compras-->
+                    <div class="cart-item"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--///////// Contenedor /////////-->
+    <div id="links" class="btn-links" onclick="enVenta(event.target.id)">
+        <a href="#" id="bebida-energetica" style="text-decoration: none;">Energeticas</a>
+        <a href="#" id="pisco" style="text-decoration: none;">Piscos</a>
+        <a href="#" id="ron" style="text-decoration: none;">Rons</a>
+        <a href="#" id="bebida" style="text-decoration: none;">Bebidas</a>
+        <a href="#" id="snack" style="text-decoration: none;">Snacks</a>
+        <a href="#" id="cerveza" style="text-decoration: none;">Cerveza</a>
+        <a href="#" id="vodka" style="text-decoration: none;">Vodka</a>
+    </div>
+    <input type="input" name="buscador" id="buscador" class="buscador" placeholder="Snaks Licores y Bebidas">
+    <main class="conteiner section-conteinera">
+        <section id="mostrar" class="productos">
+        <!--aqui llena el scrip los productos
+        <div>
+            <p></p> nombre
+            <img src="" alt="">
+            <p></p>
+            <p></p>
+            <a href="" onclick=""></a>
+        </div> 
+        -->    
+        </section>
+    </main>
+    <!--/////////footer/////////-->
+    <footer class="footer" id="footer">
+        <div></div>
+    </footer>
+    <!--//////////SCRIPTS/////////-->
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="">
+</body>
+</html>
