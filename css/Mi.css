@@ -77,25 +77,19 @@ body {
 }
 
 /*------------------ Productos ----------------*/
-.mostrar{
+div #mostrar{
   display: grid;
-  grid-template-columns: 1r 1r 1r 1r 1r;
-  grid-template-rows: 1r 1r 1r 1r 1r 1r;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .item{
   grid-area: auto;
   max-width: 300px;
-  max-height: 300px ;
-  display: flex;
+  max-height: 400px ;
   width: 80%;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.item-img{
-  max-width: 250;
-  max-height: 300;
 }
 
 
